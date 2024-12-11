@@ -1,32 +1,12 @@
-# Code für Luftballon-Animation aktualisieren
-
-# Animations-CSS
-balloon_animation_css = """
-body {
-    overflow: hidden; /* Verhindert das Scrollen aufgrund der Ballons */
-}
-
-.balloons {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    pointer-events: none;
-}
-
-.balloon {
-    position: absolute;
-    bottom: -100px;
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    width: 40px;
-    height: 60px;
-    background-color: var(--balloon-color);
-    border-radius: 50%;
-    line-height: 60px;
-    animation: float 5s ease-in-out infinite;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes float {
@@ -43,4 +23,18 @@ body {
         opacity: 0;
     }
 }
-"""
+
+.balloons .balloon {
+    position: absolute;
+    bottom: -100px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 40px;
+    height: 60px;
+    background-color: var(--balloon-color);
+    border-radius: 50%;
+    line-height: 60px;
+    animation: float 5s ease-in-out infinite;
+}
