@@ -1,14 +1,21 @@
+# Animations-JS
+balloon_animation_js = """
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Website geladen!");
+    const balloonContainer = document.createElement("div");
+    balloonContainer.className = "balloons";
+    document.body.appendChild(balloonContainer);
 
-    const animatedSections = document.querySelectorAll(".animated-section");
-    window.addEventListener("scroll", () => {
-        animatedSections.forEach((section) => {
-            const sectionTop = section.getBoundingClientRect().top;
-            const triggerPoint = window.innerHeight - 100;
-            if (sectionTop < triggerPoint) {
-                section.classList.add("visible");
-            }
-        });
-    });
+    const message = "Happy Birthday";
+    const colors = ["red", "blue", "green", "yellow", "purple", "orange", "pink"];
+    
+    for (let i = 0; i < message.length; i++) {
+        const balloon = document.createElement("div");
+        balloon.className = "balloon";
+        balloon.style.setProperty("--balloon-color", colors[i % colors.length]);
+        balloon.style.left = Math.random() * 100 + "vw";
+        balloon.style.animationDelay = Math.random() * 2 + "s";
+        balloon.textContent = message[i];
+        balloonContainer.appendChild(balloon);
+    }
 });
+"""
