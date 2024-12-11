@@ -1,13 +1,8 @@
-# Animations-JS
-balloon_animation_js = """
 document.addEventListener("DOMContentLoaded", () => {
-    const balloonContainer = document.createElement("div");
-    balloonContainer.className = "balloons";
-    document.body.appendChild(balloonContainer);
-
+    const balloonContainer = document.querySelector(".balloons");
     const message = "Happy Birthday";
     const colors = ["red", "blue", "green", "yellow", "purple", "orange", "pink"];
-    
+
     for (let i = 0; i < message.length; i++) {
         const balloon = document.createElement("div");
         balloon.className = "balloon";
@@ -18,4 +13,3 @@ document.addEventListener("DOMContentLoaded", () => {
         balloonContainer.appendChild(balloon);
     }
 });
-"""
