@@ -1,0 +1,69 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 25th Birthday</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Zusätzliche CSS für die fliegende Animation */
+        #fly-in-text {
+            font-size: 3rem;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            color: #c50000d7;
+            position: relative;
+            opacity: 0;
+            animation: flyIn 2s ease-out forwards;
+        }
+
+        /* Animation für den Text */
+        @keyframes flyIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="images/confetti_rechts.png" alt="Rechts oben" class="deco-top-right">
+    <img src="images/confetti_links.png" alt="Links oben" class="deco-top-left">
+    
+    <div class="container">
+        <!-- Animierter Titel -->
+        <h1 id="fly-in-text"></h1>
+        <p class="animated-text">Diese Gutscheine sind für dich!</p>
+        <a href="geschenk.html" class="button-redeem animated-button">zu deinen Gutscheinen!</a>
+    </div>
+
+    <!-- JavaScript für den fliegenden Text -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const textElement = document.getElementById('fly-in-text');
+            const text = "Happy Birthday Sara!";
+
+            // Text langsam Buchstabe für Buchstabe anzeigen lassen
+            let index = 0;
+            const interval = setInterval(() => {
+                if (index < text.length) {
+                    textElement.textContent += text[index];
+                    index++;
+                } else {
+                    clearInterval(interval);
+                }
+            }, 80); // Geschwindigkeit in Millisekunden pro Buchstabe
+        });
+    </script>
+    <div class="footer-image">
+        <img src="images/banneru.gif" alt="Banner unten Mitte">
+    </div>
+</body>
+</html>

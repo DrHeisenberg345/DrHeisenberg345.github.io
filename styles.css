@@ -1,0 +1,296 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fef6e4;
+    text-align: center;
+    position: relative; /* Wichtig für die absolute Positionierung der Bilder */
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    background: rgba(68, 68, 68, 0.521);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px auto;
+}
+
+
+/* Container 1 Styling */
+.container1 {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    background: rgba(68, 68, 68, 0.521);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px auto;
+    background: url(images/outside.png);
+    background-size: contain 10vw 10vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Container2 Styling */
+.container2 {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    background: rgba(68, 68, 68, 0.521);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px auto;
+    background: url(images/sunrise.png);
+}
+
+/* Container3 Styling */
+.container3 {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    background: rgba(68, 68, 68, 0.521);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px auto;
+    background: url(images/sunset.JPEG);
+    background-size:cover;
+
+}
+
+
+/* Container4 Styling */
+.container4 {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    background: rgba(68, 68, 68, 0.521);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px auto;
+    
+}
+
+/* Container5 Styling */
+.container5 {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    background: rgba(68, 68, 68, 0.521);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px auto;
+}
+
+/* Container6 Styling */
+.container6 {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    background: rgba(68, 68, 68, 0.521);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px auto;
+    background-attachment: local;
+    background: url(images/essen.png);
+    background-position: 50%;
+}
+
+/*Textfelder für schlechten Background */
+.animated-title-container {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    background-blend-mode: saturation;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px auto;
+}
+
+
+/*Textfeld klein für schlechten Background */
+.animated-text-container {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    background-blend-mode: saturation;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px auto;
+}
+
+
+/* Titel Animation */
+.animated-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+
+}
+
+/* Subtext Animation */
+.animated-text {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        animation: fadeIn 2s ease-in-out;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: #e63946;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    animation: pulse 3.5s infinite;
+}
+
+/* Button ohne abstand */
+.button-redeem {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: #e63946;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    animation: pulse 3.5s infinite;
+}
+
+.button:hover {
+    background: #d62839;
+}
+
+.footer-image {
+    width: 100%; /* Bild über die gesamte Breite */
+    text-align: center;
+    margin-top: 20px; /* Abstand nach oben */
+}
+
+.footer-image img {
+    width: 75vw; /* Skaliert mit der Fensterbreite */
+    max-width: 1200px; /* Begrenzung auf maximale Breite */
+    height: auto; /* Höhe bleibt proportional */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Dekoration Bild: Rechts oben */
+.deco-top-right {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 20vw; /* Skaliert mit der Fensterbreite */
+    max-width: 400px; /* Maximale Breite */
+    height: auto; /* Höhe bleibt proportional */
+}
+
+/* Dekoration Bild: Links oben */
+.deco-top-left {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 20vw; /* Skaliert mit der Fensterbreite */
+    max-width: 400px; /* Maximale Breite */
+    height: auto; /* Höhe bleibt proportional */
+}
+
+
+
+/* Dekoration Bild: Unten Mitte */
+.deco-bottom-center {
+    position: static;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75vw; /* Skaliert mit der Fensterbreite */
+    max-width: 1200px; /* Maximale Breite */
+    height: auto; /* Höhe bleibt proportional */
+}
+
+
+
+.gift-image {
+    display: block;
+    margin: 20px auto; /* Zentriert das Bild */
+    width: 30vw; /* Das Bild nimmt 30% der Fensterbreite ein */
+    max-width: 200px; /* Maximalbreite von 200px */
+    height: auto; /* Höhe passt sich proportional zur Breite an */
+    border-radius: 10px; /* Optional: Abgerundete Ecken */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: Schatten für einen 3D-Effekt */
+}
+
+/* Animationen */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
